@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style type="text/css">
+    p{width: 100 px; height: 100px; background-color: #e1ddda;margin: 20px;display: inline-block;}
+    p.uno{-moz-box-shadow:-5px -5px #777777;
+            -webkit-box-shadow:-5px -5px #777777;
+            box-shadow: -5px -5px #777777;}
+    p.dos{-moz-box-shadow:-5px -5px -5px #777777;
+            -webkit-box-shadow:-5px -5px -5px #777777;
+            box-shadow: -5px -5px -5px #777777;} 
+    p.tres{-moz-box-shadow:-5px -5px -5px -5px #777777;
+            -webkit-box-shadow:-5px -5px -5px -5px #777777;
+            box-shadow: -5px -5px -5px -5px #777777;} 
+    p.cuatro{-moz-box-shadow:0 0 10px#777777;
+            -webkit-box-shadow:0 0 10px#777777;
+            box-shadow: 0 0 10px #777777;} 
+    p.cinco{-moz-box-shadow: inset 0 0 10px#777777;
+            -webkit-box-shadow: inset 0 0 10px#777777;
+            box-shadow:  inset 0 0 10px #777777;}  
+    p.text{width:500px;height: 200px;background-color: #e1ddda;margin: 20px;display:inline-block}                                     
+               
+
+    </style>
+</head>
+<body bgcolor="pink">
+ <p class="uno"></p>  
+ <p class="dos"></p>
+ <p class="tres"></p> 
+  </br>
+  <p class="cuatro"></p>
+  <p class="cinco"></p>
+  </br>
+  <p class="text">Si se indica un solo valor, se aplica a los cuatro bordes. Si se indican dos valores, el primero se aplica al borde superior e inferior y el segundo valor se aplica al borde izquierdo y derecho.</p>  
+</body>
+</html>

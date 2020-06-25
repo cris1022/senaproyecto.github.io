@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image</title>
+    <style type="text/css">
+    p{width: 400px;
+        height: 100px;
+        border:15px solid #ffffff;}
+    p.uno{ -moz-border-image: url("imagenes/dots.gif") 11 11 11 11 stretch;
+    -webkit-border-image: url("imagenes/dots.gif")11 11 11 11 stretch;
+    border-image: url("imagenes/dots.gif") 11 11 11 11 stretch;}  
+    p.dos{ -moz-border-image: url("imagenes/dots.gif") 11 11 11 11 round;
+    -webkit-border-image: url("imagenes/dots.gif")11 11 11 11 round;
+    border-image: url("imagenes/dots.gif") 11 11 11 11 round;}  
+    
+
+    </style>
+</head>
+<body>
+    <p class="uno">CSS permite modificar el aspecto de cada uno de los cuatro bordes de la caja de un elemento. Para cada borde se puede establecer su anchura o grosor, su color y su estilo, por lo que en total CSS define 20 propiedades relacionadas con los bordes.</p>
+    <p class="dos">La anchura de los bordes se indica mediante una medida (en cualquier unidad de medida absoluta</p>
+    <p>La unidad de medida más habitual para establecer el grosor de los bordes es el píxel,</p>
+</body>
+</html>

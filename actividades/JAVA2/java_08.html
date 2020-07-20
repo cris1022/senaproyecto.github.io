@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Posicionamiento de Numeros  </title>
+    <script language="javascript"type="text/javascript">
+    var numero1,numero2,numero3,mayor,intermedio,menor;
+    numero1=prompt("Ingrese el primer numero");
+    numero2=prompt("Ingrese el segundo numero");
+    numero3=prompt("Ingrese el tercer numero");
+    numero1=parseInt(numero1);
+    numero2=parseInt(numero2);
+    numero3=parseInt(numero3);
+  if(numero1>numero2&&numero1>numero3){
+      mayor=numero1;
+  }else{
+      if(numero2>numero1&&numero2>numero3){
+        mayor=numero2;
+      }else{
+          mayor=numero3;
+      }
+  }
+  if(numero1<numero2&&numero1<numero3){
+      menor=numero1;
+  }else{
+      if(numero2<numero1&&numero2<numero3){
+      menor=numero2;
+  }else{menor=numero3;
+
+  }
+}
+    
+intermedio=(numero1+numero2+numero3)-(mayor+menor);
+alert("El numero mayor es: " + mayor + "\n"
++"El numero Intermedio es:  "+ intermedio + "\n"+
+" El numero menor es: " + menor );
+    </script>
+    <style>
+        h1{text-align: center;}
+        div{
+  border: 10px solid #151d19;
+  background: #cef8e4;
+  height: 100px;
+  width: 200px;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: justify;
+  
+}
+    </style>
+</head>
+<body background="Imagenes/JSP.jpg">
+    <h1>  Posicionamiento de Numeros  </h1>
+    <div>
+    <p>Programa en Java Script para evaluar 3 numero saber cual es el mayor, intermedio y menor   
+    </p>
+</div>
+    
+</body>
+</html>

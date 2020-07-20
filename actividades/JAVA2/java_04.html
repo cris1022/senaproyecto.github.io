@@ -3,28 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identificar vocales</title>
+    <title>multiplos de 3 y 5 </title>
     <script language="javascript"type="text/javascript">
-    var vocal="";
-    var r='NO ES VOCAL';
- vocal= prompt("Ingrese un caracter : " );
+    var numero =0;
+    var r=" ";
+ numero= prompt("Ingrese un el numero : " );
+numero=parseInt(numero);
+
     
-    if (vocal=='a'||vocal=='A'){
-    r="ES VOCAL ";
+    if (numero%3==0 && numero % 5 ==0){
+    r="si es multiplo de 3 y 5  ";
 }
-if (vocal=='E'||vocal=='e'){
-    r="ES VOCAL ";
+else{
+    r="No es multiplo de 3 y 5 ";
 }
-if (vocal=='i'||vocal=='I'){
-    r="ES VOCAL ";
-}
-if (vocal=='O'||vocal=='o'){
-    r="ES VOCAL ";
-}
-if (vocal=='u'||vocal=='U'){
-    r="ES VOCAL ";
-}
-    alert ("  "+r);
+    alert (" el numero : "+ numero + r);
     
 
     </script>
@@ -44,9 +37,9 @@ if (vocal=='u'||vocal=='U'){
     </style>
 </head>
 <body background="Imagenes/JSP.jpg">
-    <h1>Identificar Vocales </h1>
+    <h1>Multiplos de 3 y 5 </h1>
     <div>
-    <p>Programa en Java Script para saber si un caracter es o no una vocal  
+    <p>Programa en Java Script para saber si un numero es multiplo de 3 y 5  
     </p>
 </div>
     

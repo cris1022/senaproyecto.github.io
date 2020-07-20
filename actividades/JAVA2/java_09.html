@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculo de descuentos   </title>
+    <script language="javascript"type="text/javascript">
+var D1=0.1;D1.toFixed(2);
+var D2 =0.2;D2.toFixed(2);
+var IVA= 0.19;IVA.toFixed(2);
+var num,valor_descuento,valor_iva,total_pagar;
+num=prompt("Ingrese el Valor del consumo ");  
+num=parseFloat(num);var compras = num.toFixed();
+if(compras<=100){
+    valor_descuento=compras*D1;
+
+}else{
+    valor_descuento=compras*D2;
+}
+valor_iva=(compras-valor_descuento)*IVA;
+total_pagar=compras-valor_descuento+valor_iva;
+alert("valor del  descuento:"+ valor_descuento +
+"\n"+"Impuesto del IVA "+ valor_iva +
+"\n"+ "Tolat a pagar " + total_pagar)
+    </script>
+    <style>
+        h1{text-align: center;}
+        div{
+  border: 10px solid #151d19;
+  background: #cef8e4;
+  height: 100px;
+  width: 200px;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: justify;
+  
+}
+    </style>
+</head>
+<body background="Imagenes/JSP.jpg">
+    <h1>  Calculo de descuentos   </h1>
+    <div>
+    <p>Programa en Java Script para calcular el descuento de 10% en consumos hasta de 100 y descuento del 20% en consumos mayores a 100 
+    </p>
+</div>
+    
+</body>
+</html>
